@@ -1,12 +1,9 @@
-# Pytorch Devcontainer
+# Pytorch Devcontainer with CUDA
 
 ## Setup
-
 - Run below in pytorch workspace
-
 ```
-$ git clone https://github.com/raucha/pytorch-devcontainer .devcontainer
-
+git clone https://github.com/raucha/pytorch-devcontainer .devcontainer
 ```
 
 ## Launch
@@ -16,7 +13,7 @@ $ git clone https://github.com/raucha/pytorch-devcontainer .devcontainer
 
 
 ## Test
-
 ```
-$ python -c 'import torch; print(torch.cuda.is_available())'
+python -c 'import torch; print(torch.cuda.is_available())'
+# -> True
 ```
